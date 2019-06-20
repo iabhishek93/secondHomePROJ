@@ -1,0 +1,10 @@
+{
+    "signIn": {
+        "Firstname": "",
+        "Lastname": "",
+        "Email":"",
+        "Phone":"",
+        "Password":"",
+        "Confirm password":""
+    }
+}

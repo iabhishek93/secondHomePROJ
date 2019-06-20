@@ -1,0 +1,21 @@
+<header></header>
+
+<div class="slider">
+    <div class="load"></div>
+    <div class="inputwithiconandbutton">
+        <input type="text" placeholder="Enter your address" 
+            [(ngModel)]="searchTerm" class="text-box">
+            
+        <span class="glyphicon glyphicon-map-marker"></span>
+    
+        <button class="btn btn-primary">Search</button>
+    </div>
+    <ul class="placelist">
+        <li *ngFor="let place of places | filter:searchTerm">
+            {{place}}
+        </li>
+    </ul>
+    
+</div>
+
+<footer></footer>
