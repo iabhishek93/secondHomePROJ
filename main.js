@@ -1,8 +1,6 @@
 const express = require('express');
 let app = express();
-app.get('/',(req,res)=>{
-    res.send('Hello World....')
-});
+app.use(express.static(__dirname+"/dist/secondhome"));
 app.post('/signIn',(req,res)=>{
     console.log(Object.keys(req))
     console.log(req.query)
